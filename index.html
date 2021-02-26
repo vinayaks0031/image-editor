@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet"/>
+    <title>Image Editor</title>
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="header">
+            <h1>Image Editor</h1>
+        </div>
+        <div class="image_wrapper">
+            <div class="img_display">
+                <img src="img/trail_img.jpg" id="trail_img"/>
+            </div>
+            <div class="controls">
+                <div class="control_head">
+                    <h2>Controls</h2>
+                </div>
+                <div class="control_bars"> 
+                    <div class="grayscale control_inputs">
+                        <label>Grayscale</label>
+                        <input type="range" min="0" max="100" value="0" id="grayscale_slider">
+                        <p class="display_num" id="grayscale_output"></p>
+                    </div>
+                    <div class="blur control_inputs">
+                        <label>Blur</label>
+                        <input type="range" min="0" max="100" value="0" id="blur_slider">
+                        <p class="display_num" id="blur_output"></p>
+                    </div>
+                    <div class="brightness control_inputs">
+                        <label>Brightness</label>
+                        <input type="range" min="0" max="100" value="0" id="bright_slider">
+                        <p class="display_num" id="brightness_output"></p>
+                    </div>
+                    <div class="opacity control_inputs">
+                        <label>Opacity</label>
+                        <input type="range" min="0" max="100" value="0" id="opacity_slider">
+                        <p class="display_num" id="opacity_output"></p>
+                    </div>
+                    <div class="sepia control_inputs">
+                        <label>Sepia</label>
+                        <input type="range" min="0" max="100" value="0" id="sepia_slider">
+                        <p class="display_num" id="sepia_output"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
