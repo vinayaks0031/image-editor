@@ -9,7 +9,7 @@ grayscale_output.innerHTML = grayscale_slider.value;
 
 grayscale_slider.oninput =  function() {
     grayscale_output.innerHTML = this.value;
-    document.getElementById('trail_img').style.filter = `grayscale(${this.value})`; 
+    document.getElementById('trail_img').style.filter = `grayscale(${this.value}%)`; 
 }
 
 
