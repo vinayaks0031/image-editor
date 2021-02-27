@@ -1,3 +1,15 @@
+function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('#trail_img')
+          .attr('src', e.target.result)
+          .width(200)
+          .height(400);
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
 console.log("Image Editor")
 
 
